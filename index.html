@@ -8,30 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator-area">
-        <h3 class="text-center">Riaz's Calculator</h3>
-        <div class="input-area">
-                <input id="input" type="text">
-                <span type="button" onclick="clean()">C</span>
-                <span type="button" onclick="back()"><</span>
-                <span type="button" onclick="insert('/')">/</span>
-                <span type="button" onclick="insert('*')">x</span>
-                <span type="button" onclick="insert(7)">7</span>
-                <span type="button" onclick="insert(8)">8</span>
-                <span type="button" onclick="insert(9)">9</span>
-                <span type="button" onclick="insert('-')">-</span>
-                <span type="button" onclick="insert(4)">4</span>
-                <span type="button" onclick="insert(5)">5</span>
-                <span type="button" onclick="insert(6)">6</span>
-                <span type="button" onclick="insert('+')" class="plus"> + </span>
-                <span type="button" onclick="insert(3)">3</span>
-                <span type="button" onclick="insert(2)">2</span>
-                <span type="button" onclick="insert(1)">1</span>
-                <span type="button" onclick="insert(0)">0</span>
-                <span type="button" onclick="insert(00)">00</span>
-                <span type="button" onclick="insert('.')">.</span>
-                <span type="button" onclick="equal()">=</span>
+    <div class="container">
+        <div class="row justify-content-center d-flex align-items-center">
+        <div class="col-12 col-sm-8 col-md-4 p-5">
+            <div class="calculator-area">
+                <div class="input-area">
+                    <h3 class="text-center">Riaz's Calculator</h3>
+                    <input id="input" type="text">
+                    <span type="button" onclick="clean()">C</span>
+                    <span type="button" onclick="back()"><</span>
+                    <span type="button" onclick="insert('/')">/</span>
+                    <span type="button" onclick="insert('*')">x</span>
+                    <span type="button" onclick="insert(7)">7</span>
+                    <span type="button" onclick="insert(8)">8</span>
+                    <span type="button" onclick="insert(9)">9</span>
+                    <span type="button" onclick="insert('-')">-</span>
+                    <span type="button" onclick="insert(4)">4</span>
+                    <span type="button" onclick="insert(5)">5</span>
+                    <span type="button" onclick="insert(6)">6</span>
+                    <span type="button" onclick="insert('+')" class="plus"> + </span>
+                    <span type="button" onclick="insert(3)">3</span>
+                    <span type="button" onclick="insert(2)">2</span>
+                    <span type="button" onclick="insert(1)">1</span>
+                    <span type="button" onclick="insert(0)">0</span>
+                    <span type="button" onclick="insert(00)">00</span>
+                    <span type="button" onclick="insert('.')">.</span>
+                    <span type="button" onclick="equal()">=</span>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
     <script>
         function insert(num){

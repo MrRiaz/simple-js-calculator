@@ -11,10 +11,6 @@ body{
     height: 100vh;
 }
 .calculator-area{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #179b85;
     padding: 10px;
     box-shadow: 5px 5px 10px #000;
@@ -22,13 +18,15 @@ body{
 
 .input-area{
     display: grid;
-    max-width: 250px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 65px 50px 50px 50px 50px 50px;
+    grid-template-rows: 35px 70px 50px 50px 50px 50px 50px;
     border: 1px solid #5d5a5a;
     grid-gap: 3px;
 }
-
+h3{
+    grid-column: 1/span 4;
+    color: #fff;
+}
 #input{
     grid-column: 1/span 4;
     font-size: 18px;
@@ -36,7 +34,7 @@ body{
     outline: none;
     border: none;
     text-align: right;
-    
+    background-color: #e6dede;
 }
 
 .input-area span{

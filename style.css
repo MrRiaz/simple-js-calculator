@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #091921;
+    height: 100vh;
+}
+.calculator-area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #179b85;
+    padding: 10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.input-area{
+    display: grid;
+    max-width: 250px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 65px 50px 50px 50px 50px 50px;
+    border: 1px solid #5d5a5a;
+    grid-gap: 3px;
+}
+
+#input{
+    grid-column: 1/span 4;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    text-align: right;
+    
+}
+
+.input-area span{
+    display: grid;
+    place-items: center;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.input-area span:active{
+    background-color: cyan;
+
+}
+
+span.plus{
+    grid-row: span 2;
+}
+
+
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #091921;
+
+}
+
+.Calculator{
+    position: relative;
+    display: grid;
+    grid-gap: 2px;
+}
+
+.Calculator .value{
+    grid-column: button 4;
+    height: 100px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: right;
+    border: none;
+    outline: none;
+}
+
+.Calculator button{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background-color: #0c2835;
+    place-items: center;
+}
+
+.Calculator button:active{
+    background-color: rgb(39, 204, 168);
+    color: #111
+
+}
+.Calculator button.clear{
+    grid-column: 2 button;
+    width: 122px;
+    background-color: #ff3077;
+}
+.Calculator button.plus{
+    grid-row: 2 button;
+    height: 122px;
+}
+
+.Calculator button.equal{
+    background-color: #03b1ff;
+} */
+
